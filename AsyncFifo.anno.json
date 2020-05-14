@@ -1,0 +1,4606 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlCircuitAnnotation",
+    "circuit":{
+      "info":{
+        
+      },
+      "modules":[
+        {
+          "info":{
+            
+          },
+          "name":"AsyncFifo",
+          "ports":[
+            {
+              "info":{
+                
+              },
+              "name":"io_wr_clk",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_wr_nrst",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_wr_en",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_wdata",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":32
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_rd_clk",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_rd_nrst",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_rd_en",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_rdata",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":32
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_empty",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_full",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            }
+          ],
+          "body":{
+            "stmts":[
+              {
+                "stmts":[
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 21:25"
+                      }
+                    },
+                    "name":"regs",
+                    "dataType":{
+                      "width":{
+                        "width":32
+                      }
+                    },
+                    "depth":4,
+                    "writeLatency":1,
+                    "readLatency":0,
+                    "readers":[
+                      "_T_40"
+                    ],
+                    "writers":[
+                      "_T_8"
+                    ],
+                    "readwriters":[
+                      
+                    ],
+                    "readUnderWrite":{
+                      
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 27:29"
+                      }
+                    },
+                    "name":"_T",
+                    "tpe":{
+                      "width":{
+                        "width":3
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_wr_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":3
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 28:40"
+                      }
+                    },
+                    "name":"_T_1",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_full",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "value":0,
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 28:37"
+                      }
+                    },
+                    "name":"_T_2",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_wr_en",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_1",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 28:59"
+                          }
+                        },
+                        "name":"_GEN_15",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_2",
+                              "tpe":{
+                                "width":{
+                                  "width":1
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            3
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 28:59"
+                          }
+                        },
+                        "name":"_T_3",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_15",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"_T",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 28:59"
+                      }
+                    },
+                    "name":"_T_4",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_3",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 36:37"
+                      }
+                    },
+                    "name":"_T_9",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_4",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":2
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 36:43"
+                          }
+                        },
+                        "name":"_GEN_16",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_9",
+                              "tpe":{
+                                "width":{
+                                  "width":2
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            3
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 36:43"
+                          }
+                        },
+                        "name":"wr_ptr_gray",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_16",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"_T_4",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 38:31"
+                      }
+                    },
+                    "name":"_T_11",
+                    "tpe":{
+                      "width":{
+                        "width":3
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"_T_11",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 39:32"
+                      }
+                    },
+                    "name":"_T_12",
+                    "tpe":{
+                      "width":{
+                        "width":3
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"_T_12",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 41:35"
+                      }
+                    },
+                    "name":"_T_13",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_12",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        2,
+                        2
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 41:58"
+                      }
+                    },
+                    "name":"_T_14",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_12",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1,
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 41:43"
+                      }
+                    },
+                    "name":"_T_15",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_13",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_14",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 42:34"
+                      }
+                    },
+                    "name":"_T_16",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"wr_ptr_gray",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        2,
+                        2
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 42:55"
+                      }
+                    },
+                    "name":"_T_17",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"wr_ptr_gray",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1,
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 42:42"
+                      }
+                    },
+                    "name":"_T_18",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_16",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_17",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 43:25"
+                      }
+                    },
+                    "name":"_T_19",
+                    "tpe":{
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_wr_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 44:35"
+                      }
+                    },
+                    "name":"_T_22",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_16",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_13",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 45:21"
+                      }
+                    },
+                    "name":"_T_23",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_15",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_18",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 45:7"
+                      }
+                    },
+                    "name":"_T_24",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_22",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_23",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 46:22"
+                      }
+                    },
+                    "name":"_T_25",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"wr_ptr_gray",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        0,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 46:49"
+                      }
+                    },
+                    "name":"_T_26",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_12",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        0,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 46:33"
+                      }
+                    },
+                    "name":"_T_27",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_25",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_26",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 52:29"
+                      }
+                    },
+                    "name":"_T_29",
+                    "tpe":{
+                      "width":{
+                        "width":3
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_rd_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":3
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 53:40"
+                      }
+                    },
+                    "name":"_T_30",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_empty",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "value":0,
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 53:37"
+                      }
+                    },
+                    "name":"_T_31",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_rd_en",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_30",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 53:60"
+                          }
+                        },
+                        "name":"_GEN_17",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_31",
+                              "tpe":{
+                                "width":{
+                                  "width":1
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            3
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 53:60"
+                          }
+                        },
+                        "name":"_T_32",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_17",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"_T_29",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 53:60"
+                      }
+                    },
+                    "name":"_T_33",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_32",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 56:27"
+                      }
+                    },
+                    "name":"_T_34",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_29",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":2
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 57:26"
+                      }
+                    },
+                    "name":"_GEN_6",
+                    "value":{
+                      "name":"_T_31",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 58:37"
+                      }
+                    },
+                    "name":"_T_41",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_33",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":2
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 58:43"
+                          }
+                        },
+                        "name":"_GEN_18",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_41",
+                              "tpe":{
+                                "width":{
+                                  "width":2
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            3
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 58:43"
+                          }
+                        },
+                        "name":"rd_ptr_gray",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_18",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"_T_33",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 60:31"
+                      }
+                    },
+                    "name":"_T_43",
+                    "tpe":{
+                      "width":{
+                        "width":3
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"_T_43",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:32"
+                      }
+                    },
+                    "name":"_T_44",
+                    "tpe":{
+                      "width":{
+                        "width":3
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"_T_44",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 63:26"
+                      }
+                    },
+                    "name":"_T_45",
+                    "tpe":{
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_rd_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":1,
+                      "width":{
+                        "width":1
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 57:14"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_rdata",
+                      "tpe":{
+                        "width":{
+                          "width":32
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "expr":{
+                        "expr":{
+                          "name":"regs",
+                          "tpe":{
+                            "fields":[
+                              {
+                                "name":"_T_40",
+                                "flip":{
+                                  
+                                },
+                                "tpe":{
+                                  "fields":[
+                                    {
+                                      "name":"addr",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        "width":{
+                                          "width":2
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "name":"en",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        "width":{
+                                          "width":1
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "name":"clk",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        
+                                      }
+                                    },
+                                    {
+                                      "name":"data",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        "width":{
+                                          "width":32
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name":"_T_8",
+                                "flip":{
+                                  
+                                },
+                                "tpe":{
+                                  "fields":[
+                                    {
+                                      "name":"addr",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        "width":{
+                                          "width":2
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "name":"en",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        "width":{
+                                          "width":1
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "name":"clk",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        
+                                      }
+                                    },
+                                    {
+                                      "name":"data",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        "width":{
+                                          "width":32
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "name":"mask",
+                                      "flip":{
+                                        
+                                      },
+                                      "tpe":{
+                                        "width":{
+                                          "width":1
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        "name":"_T_40",
+                        "tpe":{
+                          "fields":[
+                            {
+                              "name":"addr",
+                              "flip":{
+                                
+                              },
+                              "tpe":{
+                                "width":{
+                                  "width":2
+                                }
+                              }
+                            },
+                            {
+                              "name":"en",
+                              "flip":{
+                                
+                              },
+                              "tpe":{
+                                "width":{
+                                  "width":1
+                                }
+                              }
+                            },
+                            {
+                              "name":"clk",
+                              "flip":{
+                                
+                              },
+                              "tpe":{
+                                
+                              }
+                            },
+                            {
+                              "name":"data",
+                              "flip":{
+                                
+                              },
+                              "tpe":{
+                                "width":{
+                                  "width":32
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "name":"data",
+                      "tpe":{
+                        "width":{
+                          "width":32
+                        }
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 65:14"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_empty",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"_T_45",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 47:13"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_full",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"_T_19",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 29:16"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_3",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 38:31"
+                          }
+                        },
+                        "loc":{
+                          "name":"_T_11",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        "expr":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_18",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"_T_33",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 39:32"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T_12",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"_T_11",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 44:12"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T_19",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_24",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_27",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 54:16"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T_29",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_32",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 60:31"
+                          }
+                        },
+                        "loc":{
+                          "name":"_T_43",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        "expr":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_16",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"_T_4",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:32"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T_44",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"_T_43",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 64:13"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T_45",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"rd_ptr_gray",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_44",
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                
+              },
+              {
+                
+              },
+              {
+                "info":{
+                  
+                },
+                "name":"regs__T_40_addr_pipe_0",
+                "tpe":{
+                  "width":{
+                    "width":2
+                  }
+                },
+                "clock":{
+                  "name":"io_rd_clk",
+                  "tpe":{
+                    
+                  },
+                  "kind":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "reset":{
+                  "value":0,
+                  "width":{
+                    "width":1
+                  }
+                },
+                "init":{
+                  "name":"regs__T_40_addr_pipe_0",
+                  "tpe":{
+                    "width":{
+                      "width":2
+                    }
+                  },
+                  "kind":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                }
+              },
+              {
+                
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "name":"regs__T_40_addr_pipe_0",
+                  "tpe":{
+                    "width":{
+                      "width":2
+                    }
+                  },
+                  "kind":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "cond":{
+                    "name":"_GEN_6",
+                    "tpe":{
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "kind":{
+                      
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "tval":{
+                    "name":"_T_34",
+                    "tpe":{
+                      "width":{
+                        "width":2
+                      }
+                    },
+                    "kind":{
+                      
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "fval":{
+                    "name":"regs__T_40_addr_pipe_0",
+                    "tpe":{
+                      "width":{
+                        "width":2
+                      }
+                    },
+                    "kind":{
+                      
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "tpe":{
+                    "width":{
+                      "width":2
+                    }
+                  }
+                }
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "expr":{
+                    "expr":{
+                      "name":"regs",
+                      "tpe":{
+                        "fields":[
+                          {
+                            "name":"_T_40",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name":"_T_8",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"mask",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "name":"_T_40",
+                    "tpe":{
+                      "fields":[
+                        {
+                          "name":"addr",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          }
+                        },
+                        {
+                          "name":"en",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        },
+                        {
+                          "name":"clk",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            
+                          }
+                        },
+                        {
+                          "name":"data",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":32
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "name":"clk",
+                  "tpe":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "name":"io_rd_clk",
+                  "tpe":{
+                    
+                  },
+                  "kind":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                }
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "expr":{
+                    "expr":{
+                      "name":"regs",
+                      "tpe":{
+                        "fields":[
+                          {
+                            "name":"_T_40",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name":"_T_8",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"mask",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "name":"_T_40",
+                    "tpe":{
+                      "fields":[
+                        {
+                          "name":"addr",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          }
+                        },
+                        {
+                          "name":"en",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        },
+                        {
+                          "name":"clk",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            
+                          }
+                        },
+                        {
+                          "name":"data",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":32
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "name":"en",
+                  "tpe":{
+                    "width":{
+                      "width":1
+                    }
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "op":{
+                    
+                  },
+                  "args":[
+                    {
+                      "name":"io_rd_en",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    {
+                      "name":"_T_30",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  ],
+                  "consts":[
+                    
+                  ],
+                  "tpe":{
+                    "width":{
+                      "width":1
+                    }
+                  }
+                }
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "expr":{
+                    "expr":{
+                      "name":"regs",
+                      "tpe":{
+                        "fields":[
+                          {
+                            "name":"_T_40",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name":"_T_8",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"mask",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "name":"_T_40",
+                    "tpe":{
+                      "fields":[
+                        {
+                          "name":"addr",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          }
+                        },
+                        {
+                          "name":"en",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        },
+                        {
+                          "name":"clk",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            
+                          }
+                        },
+                        {
+                          "name":"data",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":32
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "name":"addr",
+                  "tpe":{
+                    "width":{
+                      "width":2
+                    }
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "name":"regs__T_40_addr_pipe_0",
+                  "tpe":{
+                    "width":{
+                      "width":2
+                    }
+                  },
+                  "kind":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                }
+              },
+              {
+                
+              },
+              {
+                
+              },
+              {
+                
+              },
+              {
+                
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "expr":{
+                    "expr":{
+                      "name":"regs",
+                      "tpe":{
+                        "fields":[
+                          {
+                            "name":"_T_40",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name":"_T_8",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"mask",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "name":"_T_8",
+                    "tpe":{
+                      "fields":[
+                        {
+                          "name":"addr",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          }
+                        },
+                        {
+                          "name":"en",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        },
+                        {
+                          "name":"clk",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            
+                          }
+                        },
+                        {
+                          "name":"data",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":32
+                            }
+                          }
+                        },
+                        {
+                          "name":"mask",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "name":"clk",
+                  "tpe":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "name":"io_wr_clk",
+                  "tpe":{
+                    
+                  },
+                  "kind":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                }
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "expr":{
+                    "expr":{
+                      "name":"regs",
+                      "tpe":{
+                        "fields":[
+                          {
+                            "name":"_T_40",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name":"_T_8",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"mask",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "name":"_T_8",
+                    "tpe":{
+                      "fields":[
+                        {
+                          "name":"addr",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          }
+                        },
+                        {
+                          "name":"en",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        },
+                        {
+                          "name":"clk",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            
+                          }
+                        },
+                        {
+                          "name":"data",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":32
+                            }
+                          }
+                        },
+                        {
+                          "name":"mask",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "name":"en",
+                  "tpe":{
+                    "width":{
+                      "width":1
+                    }
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "op":{
+                    
+                  },
+                  "args":[
+                    {
+                      "name":"io_wr_en",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    {
+                      "name":"_T_1",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  ],
+                  "consts":[
+                    
+                  ],
+                  "tpe":{
+                    "width":{
+                      "width":1
+                    }
+                  }
+                }
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "expr":{
+                    "expr":{
+                      "name":"regs",
+                      "tpe":{
+                        "fields":[
+                          {
+                            "name":"_T_40",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name":"_T_8",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"mask",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "name":"_T_8",
+                    "tpe":{
+                      "fields":[
+                        {
+                          "name":"addr",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          }
+                        },
+                        {
+                          "name":"en",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        },
+                        {
+                          "name":"clk",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            
+                          }
+                        },
+                        {
+                          "name":"data",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":32
+                            }
+                          }
+                        },
+                        {
+                          "name":"mask",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "name":"mask",
+                  "tpe":{
+                    "width":{
+                      "width":1
+                    }
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "value":1,
+                  "width":{
+                    "width":1
+                  }
+                }
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "expr":{
+                    "expr":{
+                      "name":"regs",
+                      "tpe":{
+                        "fields":[
+                          {
+                            "name":"_T_40",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name":"_T_8",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"mask",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "name":"_T_8",
+                    "tpe":{
+                      "fields":[
+                        {
+                          "name":"addr",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          }
+                        },
+                        {
+                          "name":"en",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        },
+                        {
+                          "name":"clk",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            
+                          }
+                        },
+                        {
+                          "name":"data",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":32
+                            }
+                          }
+                        },
+                        {
+                          "name":"mask",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "name":"addr",
+                  "tpe":{
+                    "width":{
+                      "width":2
+                    }
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "op":{
+                    
+                  },
+                  "args":[
+                    {
+                      "name":"_T",
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  ],
+                  "consts":[
+                    1,
+                    0
+                  ],
+                  "tpe":{
+                    "width":{
+                      "width":2
+                    }
+                  }
+                }
+              },
+              {
+                "info":{
+                  
+                },
+                "loc":{
+                  "expr":{
+                    "expr":{
+                      "name":"regs",
+                      "tpe":{
+                        "fields":[
+                          {
+                            "name":"_T_40",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name":"_T_8",
+                            "flip":{
+                              
+                            },
+                            "tpe":{
+                              "fields":[
+                                {
+                                  "name":"addr",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":2
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"en",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"clk",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    
+                                  }
+                                },
+                                {
+                                  "name":"data",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":32
+                                    }
+                                  }
+                                },
+                                {
+                                  "name":"mask",
+                                  "flip":{
+                                    
+                                  },
+                                  "tpe":{
+                                    "width":{
+                                      "width":1
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "name":"_T_8",
+                    "tpe":{
+                      "fields":[
+                        {
+                          "name":"addr",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          }
+                        },
+                        {
+                          "name":"en",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        },
+                        {
+                          "name":"clk",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            
+                          }
+                        },
+                        {
+                          "name":"data",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":32
+                            }
+                          }
+                        },
+                        {
+                          "name":"mask",
+                          "flip":{
+                            
+                          },
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "flow":{
+                      
+                    }
+                  },
+                  "name":"data",
+                  "tpe":{
+                    "width":{
+                      "width":32
+                    }
+                  },
+                  "flow":{
+                    
+                  }
+                },
+                "expr":{
+                  "name":"io_wdata",
+                  "tpe":{
+                    "width":{
+                      "width":32
+                    }
+                  },
+                  "kind":{
+                    
+                  },
+                  "flow":{
+                    
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "main":"AsyncFifo"
+    }
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.InfoModeAnnotation",
+    "modeName":"append"
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.options.TargetDirAnnotation",
+    "directory":"."
+  },
+  {
+    "class":"firrtl.options.OutputAnnotationFileAnnotation",
+    "file":"AsyncFifo"
+  },
+  {
+    "class":"firrtl.stage.OutputFileAnnotation",
+    "file":"AsyncFifo"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  }
+]
