@@ -27,12 +27,18 @@ class AsyncFifoB(width:Int,depth:Int) extends RawModule{
   // regs num = 2 ^ depth
   val regs = SyncReadMem(1 << depth, UInt(width.W))
 
-  // this signals will be send from one clock domain to another
+  // these signals will be send from one clock domain to another
   val wr_ptr_bin_next = Wire(UInt((depth+1).W))
   val wr_ptr_gray_next = Wire(UInt((depth+1).W))
   val rd_ptr_bin_next = Wire(UInt((depth+1).W))
   val rd_ptr_gray_next = Wire(UInt((depth+1).W))
 
+  /**
+    * wr_clk domain
+    * 1. generate write pointer.
+    * 2. convert binary pointer to gray code
+    * 3. generate fifo full signal
+    */
   withClockAndReset(io.wr_clk,io.wr_nrst){
     // generate write pointer, plus 1 while write a new data
     val wr_ptr_bin = RegInit(0.U((depth+1).W))
@@ -50,6 +56,12 @@ class AsyncFifoB(width:Int,depth:Int) extends RawModule{
     io.full := isFifoFull(twoStageSync(rd_ptr_gray_next),binToGray(wr_ptr_bin_next))
   }
 
+  /**
+    * rd_clk domain
+    * 1. generate read pointer
+    * 2. convert binary pointer to gray code
+    * 3. generate fifo empty signal
+    */
   withClockAndReset(io.rd_clk,io.rd_nrst){
     // generate read pointer, plus 1 while read data out
     val rd_ptr_bin = RegInit(0.U((depth+1).W))
