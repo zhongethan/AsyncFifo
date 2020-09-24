@@ -28,7 +28,7 @@
 写数据和写使能信号同时有效。在下一个时钟，数据被锁存到FIFO存储单元中。
 
 ![async_fifo_write_timing](https://github.com/zhongethan/AsyncFifo/blob/master/src/main/resources/FIFO_WRITE.png)
-#### 1.2 写时序
+#### 1.2 读时序
 读数据和读使能同时有效。
 
 ![async_fifo_read_timing](https://github.com/zhongethan/AsyncFifo/blob/master/src/main/resources/FIFO_READ.png)
