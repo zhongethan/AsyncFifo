@@ -19,7 +19,7 @@
 |wr_clk: 写时钟|rdata: 读数据|
 |rd_clk: 读时钟|full: FIFO满标志|
 |wr_nrst: 写时钟域复位信号|empty: FIFO空标志|
-|rd_clk: 读时钟域复位信号||
+|rd_nrst: 读时钟域复位信号||
 |wr_en: 写使能||
 |rd_en: 读使能||
 |wdata: 写数据||
