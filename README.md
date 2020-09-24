@@ -2,9 +2,8 @@
 =======================
 用chisel实现一个异步FIFO设计，读写指针使用格雷码同步方法。
 * FIFO深度，数据位宽可配。深度只能为2^n，且n>=2；
-* 复位信号，使能信号皆高有效；
+* 复位信号，使能信号皆高有效(high_active)；
 * 读写数据与读写使能信号同时有效；
-* FIFO mem没有复位值；
 * 不实现overflow和overrun逻辑；
 * 不实现almost full和almost empty逻辑；
 
@@ -13,14 +12,17 @@
 2. [硬件架构的艺术[M].Mohit Arora](https://book.douban.com/subject/26957371/)
 ### 1 结构框架
 ![async_fifo_block_diagram](https://github.com/zhongethan/AsyncFifo/blob/master/src/main/resources/afifo.png)
-端口信号
+
+**端口信号**
 |输入|输出|
 |----|----|
-|wr_clk:写时钟|rd_clk：读时钟|
-|wr_nrst:写时钟域复位信号|rd_clk：读时钟域复位信号|
-|wr_en:写使能|rd_en:读使能|
-|wdata:写数据|rdata:读数据|
-|full:FIFO满标志|empty:FIFO空标志|
+|wr_clk: 写时钟|rdata: 读数据|
+|rd_clk: 读时钟|full: FIFO满标志|
+|wr_nrst: 写时钟域复位信号|empty: FIFO空标志|
+|rd_clk: 读时钟域复位信号||
+|wr_en: 写使能||
+|rd_en: 读使能||
+|wdata: 写数据||
 
 #### 1.1 写时序
 写数据和写使能信号同时有效。在下一个时钟，数据被锁存到FIFO存储单元中。
