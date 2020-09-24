@@ -1,0 +1,4625 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlCircuitAnnotation",
+    "circuit":{
+      "info":{
+        
+      },
+      "modules":[
+        {
+          "info":{
+            
+          },
+          "name":"AsyncFifo",
+          "ports":[
+            {
+              "info":{
+                
+              },
+              "name":"io_wr_clk",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_wr_nrst",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_wr_en",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_wdata",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":8
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_rd_clk",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_rd_nrst",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_rd_en",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_rdata",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":8
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_empty",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_full",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            }
+          ],
+          "body":{
+            "stmts":[
+              {
+                "stmts":[
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 48:19"
+                      }
+                    },
+                    "name":"regs_0",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"regs_0",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 48:19"
+                      }
+                    },
+                    "name":"regs_1",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"regs_1",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 48:19"
+                      }
+                    },
+                    "name":"regs_2",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"regs_2",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 48:19"
+                      }
+                    },
+                    "name":"regs_3",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"regs_3",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 48:19"
+                      }
+                    },
+                    "name":"regs_4",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"regs_4",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 48:19"
+                      }
+                    },
+                    "name":"regs_5",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"regs_5",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 48:19"
+                      }
+                    },
+                    "name":"regs_6",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"regs_6",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 48:19"
+                      }
+                    },
+                    "name":"regs_7",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"regs_7",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 51:29"
+                      }
+                    },
+                    "name":"wr_ptr_bin",
+                    "tpe":{
+                      "width":{
+                        "width":4
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_wr_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":4
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 52:37"
+                      }
+                    },
+                    "name":"_T",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_full",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "value":0,
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 52:34"
+                      }
+                    },
+                    "name":"_T_1",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_wr_en",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 52:56"
+                          }
+                        },
+                        "name":"_GEN_24",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_1",
+                              "tpe":{
+                                "width":{
+                                  "width":1
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            4
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 52:56"
+                          }
+                        },
+                        "name":"_T_2",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_24",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"wr_ptr_bin",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":5
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 52:56"
+                      }
+                    },
+                    "name":"wr_ptr_bin_next",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_2",
+                          "tpe":{
+                            "width":{
+                              "width":5
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 110:7"
+                          }
+                        },
+                        "name":"_GEN_25",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"wr_ptr_bin_next",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            1
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 110:7"
+                          }
+                        },
+                        "name":"_T_4",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_25",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            4
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 110:14"
+                      }
+                    },
+                    "name":"_T_5",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_4",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"wr_ptr_bin_next",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 104:22"
+                      }
+                    },
+                    "name":"dly",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_wr_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":8
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 58:26"
+                      }
+                    },
+                    "name":"wr_addr",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"wr_ptr_bin",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        2,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "name":"_GEN_0",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":0,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"wr_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"io_wdata",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_0",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "name":"_GEN_1",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":1,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"wr_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"io_wdata",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_1",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "name":"_GEN_2",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":2,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"wr_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"io_wdata",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_2",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "name":"_GEN_3",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":3,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"wr_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"io_wdata",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_3",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "name":"_GEN_4",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":4,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"wr_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"io_wdata",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_4",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "name":"_GEN_5",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":5,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"wr_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"io_wdata",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_5",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "name":"_GEN_6",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":6,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"wr_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"io_wdata",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_6",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "name":"_GEN_7",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":7,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"wr_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"io_wdata",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_7",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 80:29"
+                      }
+                    },
+                    "name":"rd_ptr_bin",
+                    "tpe":{
+                      "width":{
+                        "width":4
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_rd_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":4
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 87:26"
+                      }
+                    },
+                    "name":"rd_addr",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"rd_ptr_bin",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        2,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":3
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 65:14"
+                      }
+                    },
+                    "name":"_GEN_17",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":1,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"rd_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"regs_1",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_0",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 65:14"
+                      }
+                    },
+                    "name":"_GEN_18",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":2,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"rd_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"regs_2",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"_GEN_17",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 65:14"
+                      }
+                    },
+                    "name":"_GEN_19",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":3,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"rd_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"regs_3",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"_GEN_18",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 65:14"
+                      }
+                    },
+                    "name":"_GEN_20",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":4,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"rd_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"regs_4",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"_GEN_19",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 65:14"
+                      }
+                    },
+                    "name":"_GEN_21",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":5,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"rd_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"regs_5",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"_GEN_20",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 65:14"
+                      }
+                    },
+                    "name":"_GEN_22",
+                    "value":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":6,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"rd_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"regs_6",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"_GEN_21",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 96:27"
+                      }
+                    },
+                    "name":"stage_d",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_wr_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":8
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 97:27"
+                      }
+                    },
+                    "name":"stage_dd",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_wr_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":8
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        
+                      }
+                    ]
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 120:23"
+                      }
+                    },
+                    "name":"full",
+                    "tpe":{
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "clock":{
+                      "name":"io_wr_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_wr_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 121:20"
+                      }
+                    },
+                    "name":"_T_11",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"stage_dd",
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":2
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 121:45"
+                      }
+                    },
+                    "name":"_T_12",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_5",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":2
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 121:36"
+                      }
+                    },
+                    "name":"_T_13",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_11",
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_12",
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 121:73"
+                      }
+                    },
+                    "name":"_T_14",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"stage_dd",
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        3,
+                        2
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":2
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 121:112"
+                      }
+                    },
+                    "name":"_T_15",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_5",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        3,
+                        2
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":2
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 121:104"
+                      }
+                    },
+                    "name":"_T_16",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_15",
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":2
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 121:99"
+                      }
+                    },
+                    "name":"_T_17",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_14",
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_16",
+                          "tpe":{
+                            "width":{
+                              "width":2
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 81:37"
+                      }
+                    },
+                    "name":"_T_20",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_empty",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "value":0,
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 81:34"
+                      }
+                    },
+                    "name":"_T_21",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_rd_en",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_20",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 81:57"
+                          }
+                        },
+                        "name":"_GEN_27",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_21",
+                              "tpe":{
+                                "width":{
+                                  "width":1
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            4
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 81:57"
+                          }
+                        },
+                        "name":"_T_22",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_27",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"rd_ptr_bin",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":5
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 81:57"
+                      }
+                    },
+                    "name":"rd_ptr_bin_next",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_22",
+                          "tpe":{
+                            "width":{
+                              "width":5
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 110:7"
+                          }
+                        },
+                        "name":"_GEN_28",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"rd_ptr_bin_next",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            1
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":3
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 110:7"
+                          }
+                        },
+                        "name":"_T_24",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_GEN_28",
+                              "tpe":{
+                                "width":{
+                                  "width":3
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            4
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 110:14"
+                      }
+                    },
+                    "name":"_T_25",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_24",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"rd_ptr_bin_next",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 104:22"
+                      }
+                    },
+                    "name":"dly_1",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_rd_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":8
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 96:27"
+                      }
+                    },
+                    "name":"stage_d_1",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_rd_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":8
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 97:27"
+                      }
+                    },
+                    "name":"stage_dd_1",
+                    "tpe":{
+                      "width":{
+                        "width":8
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_rd_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":0,
+                      "width":{
+                        "width":8
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        
+                      }
+                    ]
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 130:24"
+                      }
+                    },
+                    "name":"empty",
+                    "tpe":{
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "clock":{
+                      "name":"io_rd_clk",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "name":"io_rd_nrst",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "init":{
+                      "value":1,
+                      "width":{
+                        "width":1
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 131:21"
+                          }
+                        },
+                        "name":"_GEN_30",
+                        "value":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_25",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            8
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          }
+                        }
+                      },
+                      {
+                        
+                      }
+                    ]
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "infos":[
+                        {
+                          "info":{
+                            "string":"AsyncFifo.scala 34:30"
+                          }
+                        },
+                        {
+                          "info":{
+                            "string":"AsyncFifo.scala 55:22"
+                          }
+                        }
+                      ]
+                    },
+                    "name":"wr_ptr_gray_next",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"dly",
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        3,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "infos":[
+                        {
+                          "info":{
+                            "string":"AsyncFifo.scala 37:30"
+                          }
+                        },
+                        {
+                          "info":{
+                            "string":"AsyncFifo.scala 84:22"
+                          }
+                        }
+                      ]
+                    },
+                    "name":"rd_ptr_gray_next",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"dly_1",
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        3,
+                        0
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 65:14"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_rdata",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "op":{
+                          
+                        },
+                        "args":[
+                          {
+                            "value":7,
+                            "width":{
+                              "width":3
+                            }
+                          },
+                          {
+                            "name":"rd_addr",
+                            "tpe":{
+                              "width":{
+                                "width":3
+                              }
+                            },
+                            "kind":{
+                              
+                            },
+                            "flow":{
+                              
+                            }
+                          }
+                        ],
+                        "consts":[
+                          
+                        ],
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        }
+                      },
+                      "tval":{
+                        "name":"regs_7",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"_GEN_22",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 91:14"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_empty",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"empty",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 68:13"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_full",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"full",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "loc":{
+                      "name":"regs_0",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"_GEN_0",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_0",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "loc":{
+                      "name":"regs_1",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"_GEN_1",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_1",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "loc":{
+                      "name":"regs_2",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"_GEN_2",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_2",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "loc":{
+                      "name":"regs_3",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"_GEN_3",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_3",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "loc":{
+                      "name":"regs_4",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"_GEN_4",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_4",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "loc":{
+                      "name":"regs_5",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"_GEN_5",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_5",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "loc":{
+                      "name":"regs_6",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"_GEN_6",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_6",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 61:21"
+                      }
+                    },
+                    "loc":{
+                      "name":"regs_7",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"_GEN_7",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"regs_7",
+                        "tpe":{
+                          "width":{
+                            "width":8
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 53:16"
+                      }
+                    },
+                    "loc":{
+                      "name":"wr_ptr_bin",
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_2",
+                          "tpe":{
+                            "width":{
+                              "width":5
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 105:9"
+                          }
+                        },
+                        "loc":{
+                          "name":"dly",
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        "expr":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_5",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            8
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 98:13"
+                          }
+                        },
+                        "loc":{
+                          "name":"stage_d",
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        "expr":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"rd_ptr_gray_next",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            8
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 99:14"
+                      }
+                    },
+                    "loc":{
+                      "name":"stage_dd",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"stage_d",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 121:10"
+                      }
+                    },
+                    "loc":{
+                      "name":"full",
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_13",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"_T_17",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 82:16"
+                      }
+                    },
+                    "loc":{
+                      "name":"rd_ptr_bin",
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"_T_22",
+                          "tpe":{
+                            "width":{
+                              "width":5
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        1
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 105:9"
+                          }
+                        },
+                        "loc":{
+                          "name":"dly_1",
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        "expr":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"_T_25",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            8
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 98:13"
+                          }
+                        },
+                        "loc":{
+                          "name":"stage_d_1",
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        "expr":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"wr_ptr_gray_next",
+                              "tpe":{
+                                "width":{
+                                  "width":4
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            8
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":8
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"AsyncFifo.scala 99:14"
+                      }
+                    },
+                    "loc":{
+                      "name":"stage_dd_1",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"stage_d_1",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "stmts":[
+                      {
+                        
+                      },
+                      {
+                        "info":{
+                          "info":{
+                            "string":"AsyncFifo.scala 131:11"
+                          }
+                        },
+                        "loc":{
+                          "name":"empty",
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        "expr":{
+                          "op":{
+                            
+                          },
+                          "args":[
+                            {
+                              "name":"stage_dd_1",
+                              "tpe":{
+                                "width":{
+                                  "width":8
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            },
+                            {
+                              "name":"_GEN_30",
+                              "tpe":{
+                                "width":{
+                                  "width":8
+                                }
+                              },
+                              "kind":{
+                                
+                              },
+                              "flow":{
+                                
+                              }
+                            }
+                          ],
+                          "consts":[
+                            
+                          ],
+                          "tpe":{
+                            "width":{
+                              "width":1
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "main":"AsyncFifo"
+    }
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.InfoModeAnnotation",
+    "modeName":"append"
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.options.TargetDirAnnotation",
+    "directory":"."
+  },
+  {
+    "class":"firrtl.options.OutputAnnotationFileAnnotation",
+    "file":"AsyncFifo"
+  },
+  {
+    "class":"firrtl.stage.OutputFileAnnotation",
+    "file":"AsyncFifo"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  }
+]
